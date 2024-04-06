@@ -32,7 +32,12 @@
 
 .texto p:nth-of-type(4) {
     animation: otherLines 2s forwards;
-    animation-delay: 2.6s;
+    animation-delay: 3.3s;
+}
+
+.texto p:nth-of-type(5) {
+    animation: otherLines 2s forwards;
+    animation-delay: 4s;
 }
 
 @keyframes firstQuoteAppear {
