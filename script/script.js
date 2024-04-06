@@ -6,8 +6,8 @@ let yesSize = 250;
 let noSize = 250;
 
 no.addEventListener('click', () => {
-    noFontSize *= 0.75;
-    yesFontSize *= 1.25;
+    noFontSize *= 0.7;
+    yesFontSize *= 1.2;
     noSize *= 0.75;
     yesSize *= 1.25;
     yes.style.fontSize = `${yesFontSize}px`;

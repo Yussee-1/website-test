@@ -3,21 +3,21 @@
     src: url('../fonts/HelveticaNeueBlack.otf') format('opentype');
 }
 html, body {
-    overflow: scroll;
     height: 100%;
 }
 
 body {
+
     background-size: cover;
     background-image: url('../images/background1.JPG');
     background-position: center;
     display: flex;
     justify-content: center; /* horizontally center the grid */
     height: 100vh; /* make sure the body fills the viewport */
-    margin-top: 0em;
 }
 
 #container {
+    margin: 1.5em;
     display: grid;
     grid-template-rows: 2;
     grid-template-columns: 2;
@@ -82,14 +82,17 @@ body {
 }
 
 button {
-    color: white;
-    border: 5px solid transparent;
-    border-radius: 15px;
-    font-size: 100px;
+    opacity: 0;
+    font-family: HelveticaBold;
+    color: rgba(255, 255, 255, 0.800);
+    border: 10px solid transparent;
+    border-radius: 25px;
+    font-size: 80px;
     padding: auto;
     width: 250px;
     height: 250px;
     transition: all 0.3s ease;
+    backdrop-filter: blur(3px);
   }
 
 a {
@@ -102,12 +105,11 @@ a {
 }
 
 #Yes {
-    background-color: green;
-    ;
+    background-color: rgba(135, 207, 235, 0.5);
 }
 
 #No {
-    background-color: red;
+    background-color: rgba(105, 90, 205, 0.5);
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     margin-left: auto;

@@ -1,11 +1,14 @@
 #Yes:hover {
-    background-color: greenyellow;
-    border-color:green;
+    
+    color: white;
+    background-color: rgba(135, 235, 192, 0.67);
+    border-color:rgba(62, 250, 169, 0.5);
 }
 
 #No:hover {
-    background-color: rgb(155, 0, 0);
-    border-color: red;
+    color: white;
+    background-color: rgba(139, 80, 211, 0.67);
+    border-color: rgba(141, 62, 220, 0.5);
 }
 
 #container h1 {
@@ -38,6 +41,16 @@
 .texto p:nth-of-type(5) {
     animation: otherLines 2s forwards;
     animation-delay: 4s;
+}
+
+#Yes {
+    animation: yesAppear 2s forwards;
+    animation-delay: 5s;
+}
+
+#No {
+    animation: noAppear 2s forwards;
+    animation-delay: 5s;
 }
 
 @keyframes firstQuoteAppear {
@@ -94,5 +107,27 @@
     100% {
         opacity: 1;
         transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes yesAppear {
+    0% {
+        opacity: 0;
+        transform: translateX(3em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes noAppear {
+    0% {
+        opacity: 0;
+        transform: translateX(-3em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
