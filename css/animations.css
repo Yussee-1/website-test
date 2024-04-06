@@ -1,0 +1,93 @@
+#Yes:hover {
+    background-color: greenyellow;
+    border-color:green;
+}
+
+#No:hover {
+    background-color: rgb(155, 0, 0);
+    border-color: red;
+}
+
+#container h1 {
+    animation: firstQuoteAppear 2s forwards;
+}
+    
+.texto p:nth-of-type(1) {
+    animation: secondLineFirst 2s forwards 0.3s, secondLineSecond 0.4s forwards 2.3s;
+}
+
+.exclamation {
+    animation: exclamationAppear 0.4s forwards 2.5s;
+}
+
+.texto p:nth-of-type(2) {
+    animation: otherLines 2s forwards;
+    animation-delay: 2s;
+}
+
+.texto p:nth-of-type(3) {
+    animation: otherLines 2s forwards;
+    animation-delay: 2.3s;
+}
+
+.texto p:nth-of-type(4) {
+    animation: otherLines 2s forwards;
+    animation-delay: 2.6s;
+}
+
+@keyframes firstQuoteAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(-1em) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes secondLineFirst {
+    0% {
+        transform: translateY(-2em) scale(0.6) translateX(15px);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) translateX(15px);
+    }
+}
+
+@keyframes secondLineSecond {
+    0% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes exclamationAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(-1em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes otherLines {
+    0% {
+        transform: translateY(-2em) scale(0.6);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

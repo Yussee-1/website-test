@@ -1,0 +1,106 @@
+@font-face {
+    font-family: HelveticaBold;
+    src: url('../fonts/HelveticaNeueBlack.otf') format('opentype');
+}
+
+body {
+    background-size: cover;
+    background-image: url('../images/background1.JPG');
+    background-position: center;
+    display: flex;
+    justify-content: center; /* horizontally center the grid */
+    height: 100vh; /* make sure the body fills the viewport */
+    margin-top: 0em;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 2;
+
+}
+
+#container .texto {
+    font-family: HelveticaBold;
+    text-shadow: 6px 6px 10px;
+    margin-bottom: 1em;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.texto h1 {
+    opacity: 0;
+    color: rgb(81, 95, 109);
+    margin: auto;
+    font-size: 120px;
+    text-shadow: 6px 6px 10px;
+}
+
+.texto p {
+    opacity: 0;
+    padding-bottom: 15px;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    line-height: 0.90;
+}
+
+.texto p:nth-of-type(1) {
+    color: rgb(126, 146, 167);
+    font-size: 90px;
+}
+
+.texto p:nth-of-type(2) {
+    color: rgb(152, 177, 203);
+    font-size: 90px;
+}
+
+.texto p:nth-of-type(3) {
+    color: rgb(176, 198, 222);
+    font-size: 150px;
+}
+
+.texto p:nth-of-type(4) {
+    font-size: 100px;
+}
+
+.exclamation {
+    opacity: 0;
+}
+
+button {
+    color: white;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    font-size: 100px;
+    padding: auto;
+    width: 250px;
+    height: 250px;
+    transition: all 0.3s ease;
+  }
+
+a {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;    
+}
+
+#Yes {
+    background-color: green;
+    ;
+}
+
+#No {
+    background-color: red;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
