@@ -26,22 +26,24 @@ body {
 }
 
 h1 {
+    white-space: nowrap;
     opacity: 0;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     color: rgba(245, 245, 220, 0.75);
     font-family: HelveticaBold;
-    font-size: 100px;
+    font-size: 180px;
     margin: auto;
     animation: textAppear 2s forwards;
 }
 
 button {
+    font-size: 25px;
     opacity: 0;
     color: beige;
     outline: none;
     font-family: HelveticaBold;
-    padding: 5px;
+    padding: 10px;
     margin: auto;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
